@@ -3,8 +3,11 @@ source "/vagrant/scripts/common.sh"
 
 function installLocalJava {
 	echo "installing oracle jdk"
+	yum install -y libgcc.x86_64 libgcc.i686
+	yum install -y glibc.i686
 	FILE=/vagrant/resources/$JAVA_ARCHIVE
 	tar -xzf $FILE -C /usr/local
+
 }
 
 function installRemoteJava {
@@ -36,6 +39,6 @@ function installJava {
 }
 
 echo "setup java"
-installJava
+installLocalJava
 setupJava
 setupEnvVars
