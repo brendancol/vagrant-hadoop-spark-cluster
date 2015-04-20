@@ -10,9 +10,9 @@ HADOOP_ARCHIVE=$HADOOP_VERSION.tar.gz
 HADOOP_MIRROR_DOWNLOAD=../resources/hadoop-2.6.0.tar.gz
 HADOOP_RES_DIR=/vagrant/resources/hadoop
 #spark
-SPARK_VERSION=spark-1.1.1
+SPARK_VERSION=spark-1.3.0
 SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.4.tgz
-SPARK_MIRROR_DOWNLOAD=../resources/spark-1.1.1-bin-hadoop2.4.tgz
+SPARK_MIRROR_DOWNLOAD=../resources/spark-1.3.0-bin-hadoop2.4.tgz
 SPARK_RES_DIR=/vagrant/resources/spark
 SPARK_CONF_DIR=/usr/local/spark/conf
 #ssh
